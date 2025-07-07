@@ -1,7 +1,7 @@
 FROM clickhouse/clickhouse-server:24.1.2-alpine
 
-ADD ../common/clickhouse/config.xml /etc/clickhouse-server/config.xml
-ADD ../common/clickhouse/users.xml /etc/clickhouse-server/users.xml
-ADD ../common/clickhouse/custom-function.xml /etc/clickhouse-server/custom-function.xml
-ADD ../common/clickhouse/user_scripts /var/lib/clickhouse/user_scripts/
-ADD ../common/clickhouse/cluster.xml /etc/clickhouse-server/config.d/cluster.xml
+COPY configs/config.xml /etc/clickhouse-server/config.xml
+COPY configs/users.xml /etc/clickhouse-server/users.xml
+COPY configs/custom-function.xml /etc/clickhouse-server/custom-function.xml
+COPY configs/user_scripts /var/lib/clickhouse/user_scripts/
+COPY configs/cluster.xml /etc/clickhouse-server/config.d/cluster.xml
