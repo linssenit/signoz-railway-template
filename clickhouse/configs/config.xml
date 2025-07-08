@@ -6,7 +6,7 @@
    or add <skip_check_for_incorrect_settings>1</skip_check_for_incorrect_settings> here.
 -->
 <clickhouse>
-    <logger>
+    <!-- <logger>
         <!-- Possible levels [1]:
 
           - none (turns off logging)
@@ -63,7 +63,7 @@
           </logger>
         </levels>
         -->
-    </logger>
+    </logger> -->
 
     <!-- Add headers to response in options request. OPTIONS method is used in CORS preflight requests. -->
     <!-- It is off by default. Next headers are obligate for CORS.-->
